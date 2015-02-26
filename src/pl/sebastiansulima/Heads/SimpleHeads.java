@@ -12,8 +12,6 @@ import org.mcstats.Metrics;
 
 import pl.sebastiansulima.Heads.Commands.CommandAHead;
 import pl.sebastiansulima.Heads.Commands.CommandHead;
-import pl.sebastiansulima.Heads.Config.Config;
-import pl.sebastiansulima.Heads.Config.Downolader;
 import pl.sebastiansulima.Heads.Config.GetHeads;
 
 public class SimpleHeads extends JavaPlugin {
@@ -36,19 +34,19 @@ public class SimpleHeads extends JavaPlugin {
         this.saveDefaultConfig();
         config = getConfig();
         
-		if(Config.getAutoUpdate()){
-			if(Config.getVer() < Downolader.getVer()){
-				try {
-					Downolader.Downolad();
-					System.out.println("SimpleHeads - New heads downloaded - V" + Downolader.getVer());
-					getConfig().set("Ver", Downolader.getVer());
-					saveConfig();
+		//if(Config.getAutoUpdate()){
+		//	if(Config.getVer() < Downolader.getVer()){
+		//		try {
+		//			Downolader.Downolad();
+		//			System.out.println("SimpleHeads - New heads downloaded - V" + Downolader.getVer());
+		//			getConfig().set("Ver", Downolader.getVer());
+		//			saveConfig();
 					
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
+		//		} catch (IOException e) {
+		//			e.printStackTrace();
+		//		}
+		//	}
+		//}
         
         
         

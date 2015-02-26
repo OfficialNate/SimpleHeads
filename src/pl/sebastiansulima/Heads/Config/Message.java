@@ -241,7 +241,7 @@ public class Message {
 		if(Config.getLang().equalsIgnoreCase("pl")){
 			message = "&2Powrot do katagori.";
 		}else{
-			message = "&2Return to catagory.";
+			message = "&2Return to category.";
 		}
 		message = message.replaceAll("&", "§");
 		return message;	
