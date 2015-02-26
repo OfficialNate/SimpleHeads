@@ -1,0 +1,12 @@
+name: SimpleHeads
+main: pl.sebastiansulima.Heads.SimpleHeads
+author: Sebastian Sulima
+version: 0.1
+description: Heads 
+depend: []
+commands:
+    head:
+       aliases: [glowa, simh, simplehead]
+    ahead:
+       aliases: [aglowa, simh, adminsimplehead]
+       
